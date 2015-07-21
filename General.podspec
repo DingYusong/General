@@ -40,23 +40,23 @@ Pod::Spec.new do |s|
     s.dependency 'MJRefresh', '~> 2.2.1'
 
 s.subspec 'Categories' do |ss|
-    ss.source_files = 'Pod/Classes/Categories/NSArray+Safe.{h,m}','Pod/Classes/Categories/NSDictionary+Safe.{h,m}','Pod/Classes/Categories/NSString+DYSFormat.{h,m}','Pod/Classes/Categories/UIColor+RGBValue.{h,m}','Pod/Classes/Categories/UIImageView+RoundCorner.{h,m}','Pod/Classes/Categories/UIViewExt.{h,m}',
+    s.dependency Pod/Classes/GeneralConst.h
+
+    ss.source_files = 'Pod/Classes/Categories/NSArray+Safe.{h,m}','Pod/Classes/Categories/NSDictionary+Safe.{h,m}','Pod/Classes/Categories/NSString+DYSFormat.{h,m}','Pod/Classes/Categories/UIColor+RGBValue.{h,m}','Pod/Classes/Categories/UIImageView+RoundCorner.{h,m}','Pod/Classes/Categories/UIViewExt.{h,m}'
   end
 
 s.subspec 'Controllers' do |ss|
-    ss.source_files = 'Pod/Classes/Controllers/*.{h,m}'
+
+s.dependency Pod/Classes/
+    ss.source_files = 'Pod/Classes/Controllers/**/*'
   end
 
 s.subspec 'Helpers' do |ss|
-    ss.source_files = 'Pod/Classes/Helpers/EntityHelper.{h,m}','Pod/Classes/Helpers/UIUtils.{h,m}','Pod/Classes/Categories/**.*'
+    ss.source_files = 'Pod/Classes/Helpers/**/*'
   end
 
 s.subspec 'Views' do |ss|
-    ss.source_files = 'Pod/Classes/Views/GButton.{h,m}','Pod/Classes/Categories/NSDictionary+Safe.{h,m}','Pod/Classes/Categories/NSString+DYSFormat.{h,m}','Pod/Classes/Categories/UIColor+RGBValue.{h,m}','Pod/Classes/Categories/UIImageView+RoundCorner.{h,m}','Pod/Classes/Categories/UIViewExt.{h,m}',
+    ss.source_files = 'Pod/Classes/Views/**/*'
   end
-
-
-
-
 
 end
