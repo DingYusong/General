@@ -48,8 +48,16 @@ code_sign() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework 'AFNetworking.framework'
   install_framework 'General.framework'
+  install_framework 'MBProgressHUD.framework'
+  install_framework 'MJRefresh.framework'
+  install_framework 'libqrencode.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework 'AFNetworking.framework'
   install_framework 'General.framework'
+  install_framework 'MBProgressHUD.framework'
+  install_framework 'MJRefresh.framework'
+  install_framework 'libqrencode.framework'
 fi

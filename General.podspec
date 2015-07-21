@@ -10,18 +10,18 @@
 Pod::Spec.new do |s|
   s.name             = "General"
   s.version          = "0.1.0"
-  s.summary          = "A short description of General."
+  s.summary          = "General app Function"
   s.description      = <<-DESC
-                       An optional longer description of General
+                       基本集成。
 
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/General"
+  s.homepage         = "https://git.oschina.net/dingyusong/General"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "丁玉松" => "dys90@qq.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/General.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://git.oschina.net/dingyusong/General.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
@@ -34,5 +34,8 @@ Pod::Spec.new do |s|
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+    s.dependency 'AFNetworking', '~> 2.5.3'
+    s.dependency 'libqrencode', '~> 3.4.2'
+    s.dependency 'MBProgressHUD', '~> 0.9.1'
+    s.dependency 'MJRefresh', '~> 2.2.1'
 end

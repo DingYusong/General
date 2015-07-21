@@ -1,15 +1,15 @@
 {
   "name": "General",
   "version": "0.1.0",
-  "summary": "A short description of General.",
-  "description": "                       An optional longer description of General\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/General",
+  "summary": "General app Function",
+  "description": "                       基本集成。\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://git.oschina.net/dingyusong/General",
   "license": "MIT",
   "authors": {
     "丁玉松": "dys90@qq.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/General.git",
+    "git": "https://git.oschina.net/dingyusong/General.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -20,6 +20,20 @@
   "resource_bundles": {
     "General": [
       "Pod/Assets/*.png"
+    ]
+  },
+  "dependencies": {
+    "AFNetworking": [
+      "~> 2.5.3"
+    ],
+    "libqrencode": [
+      "~> 3.4.2"
+    ],
+    "MBProgressHUD": [
+      "~> 0.9.1"
+    ],
+    "MJRefresh": [
+      "~> 2.2.1"
     ]
   }
 }
