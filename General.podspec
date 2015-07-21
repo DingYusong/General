@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "General"
-  s.version          = "0.1.0"
+  s.version          = "1.0.0"
   s.summary          = "General app Function"
   s.description      = <<-DESC
                        基本集成。
