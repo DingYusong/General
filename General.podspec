@@ -27,15 +27,36 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Pod/Classes/GeneralInterface.h','Pod/Classes/GeneralConst.h'
   s.resource_bundles = {
     'General' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
     s.dependency 'AFNetworking', '~> 2.5.3'
     s.dependency 'libqrencode', '~> 3.4.2'
     s.dependency 'MBProgressHUD', '~> 0.9.1'
     s.dependency 'MJRefresh', '~> 2.2.1'
+
+s.subspec 'Categories' do |ss|
+    ss.source_files = 'Pod/Classes/Categories/NSArray+Safe.{h,m}','Pod/Classes/Categories/NSDictionary+Safe.{h,m}','Pod/Classes/Categories/NSString+DYSFormat.{h,m}','Pod/Classes/Categories/UIColor+RGBValue.{h,m}','Pod/Classes/Categories/UIImageView+RoundCorner.{h,m}','Pod/Classes/Categories/UIViewExt.{h,m}',
+  end
+
+s.subspec 'Controllers' do |ss|
+    ss.source_files = 'Pod/Classes/Controllers/*.{h,m}'
+  end
+
+s.subspec 'Helpers' do |ss|
+    ss.source_files = 'Pod/Classes/Helpers/EntityHelper.{h,m}','Pod/Classes/Helpers/UIUtils.{h,m}','Pod/Classes/Categories/**.*'
+  end
+
+s.subspec 'Views' do |ss|
+    ss.source_files = 'Pod/Classes/Views/GButton.{h,m}','Pod/Classes/Categories/NSDictionary+Safe.{h,m}','Pod/Classes/Categories/NSString+DYSFormat.{h,m}','Pod/Classes/Categories/UIColor+RGBValue.{h,m}','Pod/Classes/Categories/UIImageView+RoundCorner.{h,m}','Pod/Classes/Categories/UIViewExt.{h,m}',
+  end
+
+
+
+
+
 end
